@@ -8,6 +8,6 @@ app.http('getinfoimage', {
 
         const name = request.query.get('name') || await request.text() || 'world';
 
-        return { body: `Hello, ${name}! Comment vas-tu?` };
+        return { body: `Hello, Comment vas-tu ${name}?` };
     }
 });
